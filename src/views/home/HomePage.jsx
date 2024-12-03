@@ -10,7 +10,6 @@ import { ToastContainer } from 'react-toastify';
 const HomePage = () => {
     const { productsLoading } = useContext(ProductContext);
     const { filtered_products } = useContext(FilterContext);
-    console.log(filtered_products);
 
     return (
         <main className='bg-secondary'>

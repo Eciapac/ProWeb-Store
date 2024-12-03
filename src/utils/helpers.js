@@ -51,7 +51,6 @@
       try {
         document.body.removeChild(div);
       } catch (e) {
-        console.log(e);
       }
     }, 3000);
   };

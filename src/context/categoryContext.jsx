@@ -42,10 +42,8 @@ export const getCategoriesLis = async (dispatch) => {
     try {
         dispatch({ type: "GET_CATEGORIES_START" });
 
-        const response = await fetch("https://dummyjson.com/products/categories"); // Укажите верный URL
+        const response = await fetch("https://dummyjson.com/products/categories/"); // Укажите верный URL
         const data = await response.json();
-
-        console.log("Fetched categories:", data);
 
         if (response.ok) {
             dispatch({ type: "GET_CATEGORIES_SUCCESS", payload: data });

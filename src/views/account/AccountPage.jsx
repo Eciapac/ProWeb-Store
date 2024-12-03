@@ -4,7 +4,6 @@ import "../../styles/AccountPage.scss";
 
 const AccountPage = () => {
   const { authData } = useContext(AuthContext);
-  console.log(authData);
 
   return (
     <main className="bg-secondary">

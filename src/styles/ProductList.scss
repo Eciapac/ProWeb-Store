@@ -127,3 +127,56 @@
         }
     }
 }
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    list-style: none;
+  }
+  
+  .pagination li {
+    margin: 0 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .pagination li:hover {
+    transform: scale(1.1);
+  }
+  
+  .pagination .active {
+    font-weight: bold;
+    background-color: #fda100;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .pagination li:not(.active):hover {
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    color: #fda100;
+    padding: 8px 15px;
+  }
+  
+  .pagination .previous, .pagination .next {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fda100;
+    padding: 8px 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination .previous:hover, .pagination .next:hover {
+    background-color: #fda100;
+    color: white;
+  }
+  
+  .pagination .previous, .pagination .next {
+    cursor: pointer;
+  }
+  

@@ -21,7 +21,6 @@ const filterReducer = (state, action) => {
             let tempProducts = JSON.parse(JSON.stringify(state.products));
             switch(action.payload){
                 case constants.BEST_MATCH: 
-                console.log(tempProducts);
                     return {
                         ...state,
                         filtered_products: state.products,

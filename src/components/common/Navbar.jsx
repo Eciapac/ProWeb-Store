@@ -17,7 +17,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Navbar = () => {
   const {categories} = useContext(CategoryContext);
-  console.log("Categories in Navbar:", categories); 
   const [showCategory, setShowCategory] = useState(false);
   const { getBasketTotal, itemsCount, totalAmount, dispatch: basketDispatch, basket } = useContext(BasketContext);
   const { authData, logout, dispatch:authDispatch } = useContext(AuthContext);
@@ -25,7 +24,6 @@ const Navbar = () => {
 
   const toggleCategory = () => {
     setShowCategory(!showCategory);
-    console.log('Category list toggled:', !showCategory);
   };
 
   const handleSearchTerm = (event) => {

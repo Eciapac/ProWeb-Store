@@ -12,11 +12,9 @@ export const getCategoriesList = async(dispatch) => {
             payload: error.message
         });
     }
-    console.log("Fetching categories in getCategoriesList..."); // Лог вызова функции
     try {
       const response = await fetch("/api/categories"); // Пример API-запроса
       const data = await response.json();
-      console.log("Fetched data:", data); // Лог результата запроса
       dispatch({ type: "GET_CATEGORIES_SUCCESS", payload: data });
     } catch (error) {
       console.error("Error fetching categories:", error);
